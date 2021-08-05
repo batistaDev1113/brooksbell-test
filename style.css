@@ -292,6 +292,10 @@ footer {
     min-height: 33%;
   }
 
+  .secondaryStoryWrapper > .storyInfoContainer {
+    height: 60%;
+  }
+
   #tertiaryContainer {
     display: flex;
     flex-direction: column;
