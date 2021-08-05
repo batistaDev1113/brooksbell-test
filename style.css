@@ -10,8 +10,8 @@
 }
 
 /***
-  header and footer styles
-***/
+    header and footer styles
+  ***/
 header,
 footer {
   width: 100%;
@@ -38,8 +38,8 @@ header p {
 }
 
 /***
-  featured story styles
-***/
+    featured story styles
+  ***/
 #main {
   width: 800px;
   margin: 0 auto;
@@ -50,14 +50,15 @@ header p {
   width: 100%;
   height: 500px;
   margin: 32px 0;
-  background: url(https://www.brooksbell.com/wp-content/uploads/2019/01/home-bg-1.jpg) no-repeat;
+  background: url(https://www.brooksbell.com/wp-content/uploads/2019/01/home-bg-1.jpg)
+    no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 /***
-  secondary stories styles
-***/
+    secondary stories styles
+  ***/
 #secondaryContainer {
   width: 100%;
   height: 350px;
@@ -76,15 +77,14 @@ header p {
 /*** Extend Page **/
 #extendPage {
   padding: 20px 0;
-
 }
 #extendPage p {
   padding: 10px 0;
 }
 
 /***
-  tertiary styles
-***/
+    tertiary styles
+  ***/
 #tertiaryContainer {
   padding: 32px 0;
   border-top: 2px solid #4aa0b3;
@@ -106,7 +106,7 @@ header p {
 #tertiaryContainer p {
   width: 100%;
   font-size: 24px;
-  color: #333
+  color: #333;
 }
 
 #tertiaryContainer a {
@@ -121,14 +121,14 @@ header p {
 }
 
 /***
-  story info styles
-***/
+    story info styles
+  ***/
 .storyInfoContainer {
   position: absolute;
   bottom: 0;
   width: 100%;
   padding: 8px 16px;
-  background: rgba(50, 50, 50, .75);
+  background: rgba(50, 50, 50, 0.75);
 }
 
 .secondaryStoryWrapper .storyInfoContainer {
@@ -165,8 +165,8 @@ header p {
 }
 
 /***
-  ONLY ADD YOUR STYLES BELOW THIS POINT...DO NOT MODIFY STYLES ABOVE.
-***/
+    ONLY ADD YOUR STYLES BELOW THIS POINT...DO NOT MODIFY STYLES ABOVE.
+  ***/
 
 header {
   position: fixed;
@@ -184,8 +184,129 @@ footer {
   width: 120px;
   height: 40px;
   color: #fff;
-  font-size: 0.90rem;
+  font-size: 0.9rem;
   font-family: inherit;
   margin-right: 25px;
   border: none;
+}
+
+.aside-section {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  bottom: 40%;
+  max-width: 26%;
+  left: 73%;
+  padding: 10px;
+}
+
+.aside-section img {
+  max-width: 100%;
+}
+
+.aside-section div p {
+  line-height: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.aside-section div a {
+  padding: 10px 30px;
+  background-color: #cb4c27;
+  text-align: center;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* media queries */
+
+/* desktop */
+@media only screen and (min-width: 1370px) {
+  #tertiaryContainer {
+    display: none;
+  }
+}
+
+/* mobile */
+@media only screen and (min-device-width: 320px) and (max-width: 1369px) {
+  #tertiaryContainer {
+    display: block;
+  }
+
+  .aside-section {
+    display: none;
+  }
+
+  #main {
+    width: 100vw;
+  }
+
+  .storyInfoContainer p {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .storyInfoContainer p a {
+    align-self: flex-start;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  #tertiaryContainer {
+    padding: 32px 20px;
+  }
+
+  #extendPage {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+  .secondaryStoryWrapper > .storyInfoContainer {
+    font-size: 0.75rem;
+    height: 60%;
+  }
+}
+
+/* For 480 Resolution */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #secondaryContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  #secondaryContainer > div {
+    width: 90%;
+    margin: 10px auto;
+    height: 100%;
+  }
+
+  .secondaryStoryWrapper {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    min-height: 33%;
+  }
+
+  #tertiaryContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #tertiaryContainer img {
+    width: 100%;
+  }
+
+  #tertiaryContainer div {
+    width: 100%;
+    padding-left: 0;
+  }
+  #tertiaryContainer div p {
+    font-size: 1rem;
+    width: 100%;
+  }
 }
