@@ -1,0 +1,191 @@
+/***
+  DO NOT MODIFY CSS DIRECTLY...
+  SCROLL ALL THE WAY TO BOTTOM OF THIS SECTION AND ADD YOUR OWN STYLES THAT WILL OVERWRITE THE DEFAULTS.
+***/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/***
+  header and footer styles
+***/
+header,
+footer {
+  width: 100%;
+  background: #19424a;
+}
+
+header {
+  text-align: center;
+}
+
+footer {
+  height: 56px;
+}
+
+header h1 {
+  margin: 0;
+  padding: 8px 16px;
+  color: white;
+}
+
+header p {
+  padding: 0 0 10px;
+  color: white;
+}
+
+/***
+  featured story styles
+***/
+#main {
+  width: 800px;
+  margin: 0 auto;
+}
+
+#featuredContainer {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin: 32px 0;
+  background: url(https://www.brooksbell.com/wp-content/uploads/2019/01/home-bg-1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/***
+  secondary stories styles
+***/
+#secondaryContainer {
+  width: 100%;
+  height: 350px;
+  padding: 32px 0;
+  border-top: 2px solid #4aa0b3;
+}
+
+.secondaryStoryWrapper {
+  position: relative;
+  width: 30.333%;
+  height: 100%;
+  margin: 0 1.5%;
+  float: left;
+}
+
+/*** Extend Page **/
+#extendPage {
+  padding: 20px 0;
+
+}
+#extendPage p {
+  padding: 10px 0;
+}
+
+/***
+  tertiary styles
+***/
+#tertiaryContainer {
+  padding: 32px 0;
+  border-top: 2px solid #4aa0b3;
+  overflow: auto;
+}
+
+#tertiaryContainer img {
+  display: block;
+  width: 39%;
+  float: left;
+}
+
+#tertiaryContainer > div {
+  width: 60%;
+  padding: 8px;
+  float: right;
+}
+
+#tertiaryContainer p {
+  width: 100%;
+  font-size: 24px;
+  color: #333
+}
+
+#tertiaryContainer a {
+  display: block;
+  width: 70%;
+  margin: 24px auto 0;
+  padding: 12px;
+  background: #cb4c27;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+/***
+  story info styles
+***/
+.storyInfoContainer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 8px 16px;
+  background: rgba(50, 50, 50, .75);
+}
+
+.secondaryStoryWrapper .storyInfoContainer {
+  height: 50%;
+}
+
+.storyInfoContainer h2,
+.storyInfoContainer p {
+  margin: 4px 0;
+  color: white;
+}
+
+.storyInfoContainer a {
+  margin-left: 8px;
+  padding: 8px 16px;
+  color: white;
+  background: #cb4c27;
+  text-decoration: none;
+}
+
+.secondaryStoryWrapper a {
+  position: absolute;
+  bottom: 8px;
+  display: block;
+  width: calc(100% - 32px);
+  margin: 8px 0 0;
+  text-align: center;
+}
+
+.storyInfoContainer a:hover,
+.storyInfoContainer a:focus {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/***
+  ONLY ADD YOUR STYLES BELOW THIS POINT...DO NOT MODIFY STYLES ABOVE.
+***/
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.btn-footer {
+  background-color: #cb4c27;
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  font-size: 0.90rem;
+  font-family: inherit;
+  margin-right: 25px;
+  border: none;
+}
